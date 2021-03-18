@@ -13,9 +13,6 @@
 </head>
 
 <body>
-    <div class="text-right no-print">
-        <button class="button primary btn-print"><i class="fas fa-print"></i></button>
-    </div>
     <main class="print">
         <h1 id="project-title" class="editable" ondblclick="doubleClickEdit(this)" onblur="doubleClickEdit(this)"
             contenteditable="false">Título do projeto</h1>
@@ -32,9 +29,9 @@
 
                                         <p class="editable" ondblclick="doubleClickEdit(this)" onblur="blurEdit(this)"
                                             contenteditable="false">
-                                            Dê duplo clique para editar o nome do requisito
+                                            Dê duplo clique para inserir
                                         </p>
-                                        <button class="button alert button-delete-table btn-remove">X</button>
+                                        <button class="button alert button-delete-table btn-remove">Deletar</button>
                                     </div>
                                 </th>
                             </tr>
@@ -45,7 +42,7 @@
                                 <td colspan="4">
                                     <p class="editable" ondblclick="doubleClickEdit(this)" onblur="blurEdit(this)"
                                         contenteditable="false">
-                                        Dê duplo clique para inserir a descrição
+                                        Dê duplo clique para inserir
                                     </p>
                                 </td>
                             </tr>
@@ -54,7 +51,7 @@
                                 <td colspan="4">
                                     <p class="editable" ondblclick="doubleClickEdit(this)" onblur="blurEdit(this)"
                                         contenteditable="false">
-                                        Dê duplo clique para inserir os Atores
+                                        Dê duplo clique para inserir
                                     </p>
                                 </td>
                             </tr>
@@ -63,7 +60,7 @@
                                 <td colspan="4">
                                     <p class="editable" ondblclick="doubleClickEdit(this)" onblur="blurEdit(this)"
                                         contenteditable="false">
-                                        Dê duplo clique para inserir as entradas
+                                        Dê duplo clique para inserir
                                     </p>
                                 </td>
                             </tr>
@@ -72,7 +69,7 @@
                                 <td colspan="4">
                                     <p class="editable" ondblclick="doubleClickEdit(this)" onblur="blurEdit(this)"
                                         contenteditable="false">
-                                        Dê duplo clique para inserir as saidas
+                                        Dê duplo clique para inserir
                                     </p>
                                 </td>
                             </tr>
@@ -81,7 +78,7 @@
                                 <td colspan="4">
                                     <p class="editable" ondblclick="doubleClickEdit(this)" onblur="blurEdit(this)"
                                         contenteditable="false">
-                                        Dê duplo clique para inserir a prioridade
+                                        Dê duplo clique para inserir
                                     </p>
                                 </td>
                             </tr>
@@ -90,8 +87,30 @@
                 </div>
             </div>
         </div>
+        <div class="buttons">
+            <button class="button primary btn btn-add">Adicionar Novo</button>
+            <button class="button success btn btn-print"><i class="fas fa-print"></i> Imprimir</button>
+        </div>
+        <footer class="footer">
+            <hr>
+            <table class="footer-table table table-borderless">
+                <tbody>
+                    <tr>
+                        <td class="footer-center">
+                            <div footer-img>
+                                <img src="imgs/logo.png" style="width: 150px; max-width:150px" alt="Logo da Team Mercury"/>
+                            </div>
+                            <div class="footer-text">
+                                Desenvolvido pela Team Mercury
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
     </main>
-    <button class="button primary float-right btn-add">Adicionar Novo</button>
+
+
     <script src="https://cdn.jsdelivr.net/npm/shepherd.js@5.0.1/dist/js/shepherd.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
