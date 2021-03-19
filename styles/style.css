@@ -48,15 +48,19 @@ body.shepherd-active::after {
   top: 0;
   left: 0;
 }
+
 .main-project-name {
   text-align: center;
 }
+
 .editable {
   cursor: pointer;
 }
+
 .row {
   margin: 100px;
 }
+
 .table-initial-content {
   width: 20%;
 }

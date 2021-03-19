@@ -51,9 +51,9 @@ function printPage() {
         '<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">'
     );
     myWindow.document.write(
-        "<style>@media print{ .print{position:relative;background-color:#fff;top:0;left:0;margin:10px;}} @page{size:25cm 34.7cm; margin:10mm 8mm 10mm 8mm;} footer{position: absolute;bottom:0;right:0} button{visibility:hidden} .footer-img{visibility:hidden} thead{display: table-row-group;} #project-title {text-align:center} .content-index, .table-initial-content{ width: 233px;} .table-requirements {position:relative}</style>"
+        "<style>@media print{} .print{background-color:#fff;top:0;left:0;margin:10px;} @page { size: 210mm 297mm; margin: 20mm;} button{visibility:hidden} .table-initial-content {width: 233px;}</style>"
     );
-    myWindow.document.write("</head><body >");
+    myWindow.document.write("</head><body>");
     myWindow.document.write(divPrint.innerHTML);
     myWindow.document.write("</body></html>");
 
