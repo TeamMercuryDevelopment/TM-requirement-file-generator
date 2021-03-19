@@ -9,7 +9,7 @@
         $clone.show();
         $clone.find('th[id^="test"]').text(`RF.${($totalRequirements + 1)}`)
         $clone.removeClass("original");
-        $clone.find('.button-delete-table').prop('disabled',false);
+        $clone.find('.button-delete-table').prop('disabled', false);
         $clone.find("input,select").val("");
         $clone.find(".editable").text("Dê duplo clique para inserir");
         $requirements.append($clone);
@@ -29,8 +29,8 @@
                     $(this).siblings("input").val(1);
                 } else {
                     $(this).closest(".row").remove();
-                    $('th[id^="test"]').each(function(index) {
-                        $(this).text(`RF.${(index + 1)}`);    
+                    $('th[id^="test"]').each(function (index) {
+                        $(this).text(`RF.${(index + 1)}`);
                     });
                 }
             }
@@ -51,9 +51,9 @@ function printPage() {
         '<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">'
     );
     myWindow.document.write(
-        "<style>@media print{ .print{position:relative;background-color:#fff;top:0;left:0;margin:10px;}} @page{size:25cm 34.7cm;} button{visibility:hidden} footer .footer-text{position: absolute; width:100%; height:40px; bottom:0; right:0} .footer-img{visibility:hidden} thead{display: table-row-group;} #project-title {text-align:center} .content-index, .table-initial-content{ width: 233px;} .table-requirements {position:relative}</style>"
+        "<style>@media print{} .print{top:0;left:0;margin:10px;} @page { size: 210mm 297mm; margin: 5mm 10mm 5mm 10mm;} .header {height: 100px; display: flex; margin-top: 50px; width:100%; justify-content:space-between} button{visibility:hidden} .header img {width: 160px; max-width:160px} .header #project-title{} .table-initial-content {width: 233px;} thead{display: table-row-group;}</style>"
     );
-    myWindow.document.write("</head><body >");
+    myWindow.document.write("</head><body>");
     myWindow.document.write(divPrint.innerHTML);
     myWindow.document.write("</body></html>");
 
@@ -67,11 +67,11 @@ function printPage() {
     };
 }
 function doubleClickEdit(Element) {
-    Element.contentEditable=true;
-    Element.className='inEdit';
+    Element.contentEditable = true;
+    Element.className = 'inEdit';
 }
 function blurEdit(Element) {
-    Element.contentEditable=false;
-    Element.className='editable';
+    Element.contentEditable = false;
+    Element.className = 'editable';
     Element.innerHTML.length === 0 ? Element.innerHTML = 'empty' : console.log(Element.innerHTML.length);
 }
