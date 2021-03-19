@@ -11,7 +11,7 @@
         $clone.removeClass("original");
         $clone.find('.button-delete-table').prop('disabled',false);
         $clone.find("input,select").val("");
-        $clone.find(".editable").text("New Values");
+        $clone.find(".editable").text("Dê duplo clique para inserir");
         $requirements.append($clone);
     });
 
@@ -51,9 +51,9 @@ function printPage() {
         '<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">'
     );
     myWindow.document.write(
-        "<style>@media print{.print{background-color:#fff;height:100%;width:100%;position:fixed;top:0;left:0;margin:0;padding:40px;font-size:14px;line-height:18px}.no-print{visibility:hidden;height:0}}@page{size:25cm 35.7cm;margin:5mm 8mm 5mm 8mm;} footer{position: fixed;bottom:0;left:0;right:0} footer img{max-width:3.5rem} button {visibility:hidden} thead {display: table-row-group;}</style>"
+        "<style>@media print{} .print{background-color:#fff;top:0;left:0;margin:10px;} @page { size: 210mm 297mm; margin: 20mm;} button{visibility:hidden} .table-initial-content {width: 233px;}</style>"
     );
-    myWindow.document.write("</head><body >");
+    myWindow.document.write("</head><body>");
     myWindow.document.write(divPrint.innerHTML);
     myWindow.document.write("</body></html>");
 

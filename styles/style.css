@@ -1,3 +1,4 @@
+
 .test {
   background-color: transparent;
   border: none;
@@ -5,17 +6,29 @@
   text-align: center;
   font-size: 4rem;
 }
+
 #project-title {
   text-align: center;
 }
-.button-delete-table {
-  margin-right: 10px;
-}
-body::after {
-  opacity: 0;
+
+th .editable {
+  font-size: 20px;
 }
 
-.table-requirements {
+th .inEdit {
+  font-size: 20px;
+}
+
+.button-delete-table {
+  position: relative;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+body::after {
+  opacity: 0;
 }
 
 .shepherd-element.shepherd-open,
@@ -35,15 +48,19 @@ body.shepherd-active::after {
   top: 0;
   left: 0;
 }
+
 .main-project-name {
   text-align: center;
 }
+
 .editable {
   cursor: pointer;
 }
+
 .row {
-  padding: 40px;
+  margin: 100px;
 }
+
 .table-initial-content {
   width: 20%;
 }
@@ -56,9 +73,39 @@ body.shepherd-active::after {
   display: flex;
   justify-content: space-between;
 }
+
 th {
   border: 1px #dfdfdf solid;
 }
-.btn-add {
-  margin: 13px;
+
+.buttons {
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.buttons .btn {
+  height: 3.5rem;
+  margin-left: 5px;
+  border-radius: .4rem;
+}
+
+.footer {
+  position: relative;
+  margin: 75px 50px 0px 0px;
+}
+
+.footer-table {
+  width: 100%;
+}
+
+.footer-center {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 60px;
+  display: block;
+}
+
+.footer-text {
+  margin-top: 20px;
 }
